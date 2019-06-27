@@ -6,7 +6,7 @@ Created on Sun Nov 26 21:36:08 2017
 """
 import os
 
-#os.chdir('C:\\Users\\Arun\\Google Drive\\Ph.D\\IEE 622\\Project')
+#os.chdir('your project folder')
 import pandas as pd
 import csv as csv
 import glob
@@ -30,7 +30,7 @@ from operator import itemgetter
 import time
 
 # SERF EAST
-path =r'C:\Users\abalas18\Google Drive\Ph.D\PV paper\Code\Data\M55_site6' # use your path
+path =r'...\Data\M55_site6' # use your path
 allFiles = glob.glob(path + "/*data_50*.csv")
 frame = pd.DataFrame()
 list_ = []
@@ -83,7 +83,7 @@ P_East[12] = (P_East[11] + P_East[13])/2
 
 
 # SERF WEST
-path =r'C:\Users\abalas18\Google Drive\Ph.D\PV paper\Code\Data\M55_site7' # use your path
+path =r'...\Data\M55_site7' # use your path
 allFiles = glob.glob(path + "/*data_51*.csv")
 frame = pd.DataFrame()
 list_ = []
@@ -192,15 +192,11 @@ fig = go.Figure(data=data, layout=layout)
 plot(fig, filename='Colorado Weather Data')
 
 
-#Write CSV
-#server = 'C:\\Users\\abalas18\\Google Drive\\Ph.D\\PV paper\\Code\\Data\\M55_site7\\'
-#file_name = 'Degradation data M55'
-#Final_Mean.to_csv(server + file_name + '.csv')
 
 #--------------------------------------------------->>>>>>>>>>>>
 #WEATHER DATA
 
-path =r'C:\Users\abalas18\Google Drive\Ph.D\PV paper\Code\Data\Weather' # use your path
+path =r'...\Data\Weather' # use your path
 allFiles = glob.glob(path + "/*466290_39.73_-105.18_*.csv")
 frame1 = pd.DataFrame()
 list_ = []
@@ -512,49 +508,7 @@ plt.show()
 
 
 
-##plt.plot(target_test.index*365,target_test['Pmax_deg'], 'g') 
-#line1 = plt.plot(target_test.index*365,target_test[:], 'g',label="Line 1", linestyle='--')
-#line2 = plt.plot(Cum_Inst.index,Cum_Inst['Deg'], 'r')
-#first_legend = plt.legend(handles=[line1], loc=1)
-## Add the legend manually to the current Axes.
-#ax = plt.gca().add_artist(first_legend)
-#plt.legend(handles=[line2], loc=4)
-#
-#plt.show()
-## plotting t, b separately 
-#
-##second_legend = plt.legend(handles=[line2], loc=2)
-### Add the legend manually to the current Axes.
-##ax = plt.gca().add_artist(second_legend)
-# # plotting t, a separately 
-##plt.plot(t, c, 'g') # plotting t, c separately 
-#
-#line1, = plt.plot([1,2,3], label="Line 1", linestyle='--')
-#line2, = plt.plot([3,2,1], label="Line 2", linewidth=4)
-#
-## Create a legend for the first line.
-#first_legend = plt.legend(handles=[line1], loc=2)
-#
-## Add the legend manually to the current Axes.
-#ax = plt.gca().add_artist(first_legend)
-#
-## Create another legend for the second line.
-#plt.legend(handles=[line2], loc=4)
-#
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+----------------------#################----------------
 
 # Degradation plot Offline
 data = [go.Scatter(
@@ -582,19 +536,5 @@ layout = go.Layout(
 )
 fig = go.Figure(data=data, layout=layout)
 plot(fig, filename='Colorado Weather Data')
-
-
-
-#
-##df_tmy = AddStressThermalCycling(df_tmy, 2.5, 5e-8)
-#
-#
-#df_tmy.to_csv(root_folder + station_name + '.csv')
-#
-#
-#print (df_tmy.head())
-
-
-
 
 
