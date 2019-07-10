@@ -3,3 +3,4 @@ This project is about the fusion of the physics-based material degradation mecha
 
 ![Map](/map2.JPG)
 
+The code is available in the code section along with the data used for this study. Please note that the algorithm has a problem with convergence to a global optimum. The user is suggested to try with different optimization algorithm ehich has good convergence criteria.
