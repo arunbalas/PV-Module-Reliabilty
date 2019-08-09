@@ -4,4 +4,4 @@ The degradation of PV module is mainly associated with the module construction t
 ![Map](/map2.JPG)
 
 ### Note:
-The python code is available in the code section (Final_serf.py) along with the data used for this study. Please note that the population based algorithm (like GA) has problem with convergence to a global optimum. But the framework is flexible to accommodate any optimization algorithm. The user is suggested to try with optimization algorithm of their choice.
+The python code is available in the code section (Final_serf.py) along with the data used for this study. Please note that the population based algorithm (like GA) has problem with convergence to a global optimum and is time consuming. But the framework is flexible to accommodate any optimization algorithm. The user is suggested to try with optimization algorithm of their choice with the use of high performance computing clusters.
